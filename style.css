@@ -1,0 +1,144 @@
+* {
+  /* border: 2px solid gold; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: center;
+}
+
+/* Each Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+  transition: all 0.5s ease;
+}
+
+/* CARD IMAGE (Top Half of Card) */
+.cardImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* CARD DETAILS (Bottom Half of Card) */
+.productTitle {
+  font-size: 20px;
+  color: #242121;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  letter-spacing: 1.35px;
+}
+
+.cardDetails {
+  padding: 15px 15px 10px 15px;
+  flex-grow: 1;
+}
+
+.condition {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 15px;
+  font-weight: 200;
+}
+
+.price {
+  font-size: 21px;
+  margin-top: 5px;
+  color: #413c3c;
+  font-weight: 200;
+}
+
+/* Card Buttons */
+.cardButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.cardButtons a {
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.icon {
+  padding-left: 3px;
+}
+
+.detailsButton a {
+  background-color: #f2ae3f;
+}
+.quoteButton a {
+  background-color: #4caf50;
+}
+
+.detailsButton {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+.quoteButton {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.detailsButton a:hover {
+  background-color: #f0a020;
+}
+
+.quoteButton a:hover {
+  background-color: #3c853e;
+}
