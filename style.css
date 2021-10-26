@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   /* border: 2px solid gold; */
   margin: 0;
@@ -63,7 +64,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-line-clamp: 2; /* number of lines to show on title */
   -webkit-box-orient: vertical;
   letter-spacing: 1.35px;
 }
